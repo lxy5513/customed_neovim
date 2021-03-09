@@ -24,7 +24,7 @@ Neovim 配置
 3.  vim .config/nvim/init.vim(编辑环境配置） > 
         mkdir -p ~/.config/nvim && ln -s $(pwd)/nvim/init.vim ~/.config/nvim/init.vim
     set clipboard=unnamedplus 
-4.  In vim, :plugInstall
+4.  In vim, :PlugInstall
 
 
 
