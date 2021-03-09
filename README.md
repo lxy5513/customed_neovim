@@ -17,14 +17,14 @@ Neovim 配置
     1. ./nvim.appimage --appimage-extract
     2. sudo mv squashfs-root / && sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 2. 安装plug.vim (插件管理工具）
-    1. mkdir -p ~/.local/share/nvim && cp -r site ~/.local/share/nvim
+    1. rm -r ~/.local/share/nvim && mkdir -p ~/.local/share/nvim && cp -r site ~/.local/share/nvim
     2. pip install -r requirements.txt
     3. sudo yum install ctags-5.8-13.el7.x86_64 (安装ctag)
     4. sudo yum install xclip (系统剪切板）
 3.  vim .config/nvim/init.vim(编辑环境配置） > 
         mkdir -p ~/.config/nvim && ln -s $(pwd)/nvim/init.vim ~/.config/nvim/init.vim
     set clipboard=unnamedplus 
-4.  In vim, :plugInstall
+4.  In vim, :PlugInstall
 
 
 
@@ -58,6 +58,7 @@ Neovim 配置
 2. 配置远程服务器ssh服务 (centos 7)
     安装 xorg-xauth and xorg-xhost
     ```
+    sudo yum -y install xorg-x11-apps
     sudo yum install -y xorg-x11-xauth
     sudo yum -y install wqy-zenhei-fonts*
     sudo yum -y install ibus-libpinyin*
