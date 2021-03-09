@@ -141,17 +141,14 @@ nnoremap J :bprev<CR>
 nnoremap oo o<esc>
 nnoremap ; :
 nnoremap <Leader>s /<C-R>=expand("<cword>")<CR><Esc>
-<<<<<<< HEAD
 " quicker window switching
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-=======
 " 返回 反向返回
 nnoremap { <C-o>
 nnoremap } <C-i>
->>>>>>> f34cfab46b21c75160fd6527ecc3108c88c81eb9
 
 
 
