@@ -18,13 +18,13 @@ Neovim 配置
     2. sudo mv squashfs-root / && sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 2. 安装plug.vim (插件管理工具）
     1. mkdir -p ~/.local/share/nvim && cp -r site ~/.local/share/nvim
-    2. 安装ctag: sudo yum install ctags-5.8-13.el7.x86_64
-    3. pip install -r requirements.txt
+    2. pip install -r requirements.txt
+    3. sudo yum install ctags-5.8-13.el7.x86_64 (安装ctag)
+    4. sudo yum install xclip (系统剪切板）
 3.  vim .config/nvim/init.vim(编辑环境配置） > 
         mkdir -p ~/.config/nvim && ln -s $(pwd)/nvim/init.vim ~/.config/nvim/init.vim
-4. sudo yum install  xclip (系统剪切板）
     set clipboard=unnamedplus 
-5.  plugInstall
+4.  In vim, :plugInstall
 
 
 
