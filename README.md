@@ -20,10 +20,11 @@ Neovim 配置
     1. mkdir -p ~/.local/share/nvim && cp -r site ~/.local/share/nvim
     2. 安装ctag: sudo yum install ctags-5.8-13.el7.x86_64
     3. pip install -r requirements.txt
-3.  vim .config/nvim/init.vim(编辑环境配置） > ln -s ~/.config/nvim/init.vim init.vim
-4.  plugInstall
-5. sudo yum install  xclip (系统剪切板）
+3.  vim .config/nvim/init.vim(编辑环境配置） > 
+        mkdir -p ~/.config/nvim && ln -s $(pwd)/nvim/init.vim ~/.config/nvim/init.vim
+4. sudo yum install  xclip (系统剪切板）
     set clipboard=unnamedplus 
+5.  plugInstall
 
 
 
