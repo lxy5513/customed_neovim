@@ -108,7 +108,7 @@ let g:auto_save = 1
 "ale
 " 语法检查
 let g:ale_linters = {'python': ['flake8', 'mypy'], 'cpp': ['cpplint']}
-let g:ale_python_flake8_options = '--max-line-length=180 --ignore=E301,E302,E303,E304,E265,E266,501,W291,F401,E402,E121,E701,E225,E231,E124,E128'
+let g:ale_python_flake8_options = '--max-line-length=180 --ignore=E301,E302,E303,E304,E265,E266,E501,W291,F401,E402,E121,E701,E225,E231,E124,E128'
 let g:ale_python_mypy_options = '--ignore-missing-imports'
 "始终开启标志列
 let g:ale_sign_column_always = 1
@@ -141,11 +141,17 @@ nnoremap J :bprev<CR>
 nnoremap oo o<esc>
 nnoremap ; :
 nnoremap <Leader>s /<C-R>=expand("<cword>")<CR><Esc>
+<<<<<<< HEAD
 " quicker window switching
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+=======
+" 返回 反向返回
+nnoremap { <C-o>
+nnoremap } <C-i>
+>>>>>>> f34cfab46b21c75160fd6527ecc3108c88c81eb9
 
 
 
