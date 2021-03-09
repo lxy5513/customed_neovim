@@ -9,16 +9,16 @@ Neovim 配置
 6. 注释/反注释 （nerdcommenter）
 
 
-步骤
+安装步骤
 1. 下载安装nvim
     1. ./nvim.appimage --appimage-extract
     2. sudo mv squashfs-root / && sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 2. 安装plug.vim (插件管理工具）
-    1. sh -c 'curl -x socks5h://127.0.0.1:10807 -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-    2. mkdir -p ~/.local/share/nvim && cp -r site ~/.local/share/nvim
-    3. 安装ctag: sudo yum install ctags-5.8-13.el7.x86_64
+    1. mkdir -p ~/.local/share/nvim && cp -r site ~/.local/share/nvim
+    2. 安装ctag: sudo yum install ctags-5.8-13.el7.x86_64
+    3. pip install -r requirements.txt
 3.  vim .config/nvim/init.vim(编辑环境配置） > ln -s ~/.config/nvim/init.vim init.vim
-4. plugInstall
+4.  plugInstall
 
 
 
