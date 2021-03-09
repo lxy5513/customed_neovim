@@ -4,9 +4,12 @@ Neovim 配置
 1. 定义跳转 (jedi)
 2. 自动补全  (jedi, deaplete)
 3. nerd tree
-4. tarbar
+4. tagsbar
 5. 错误提示(ale, pip installl flake8)
-6. 注释/反注释 （nerdcommenter）
+6. 注释/反注释 （nerdcommenter, <leader>cc/<leader>cu）
+7. 共享剪切板
+8. 高亮
+9. 自动保存
 
 
 ## 安装步骤
@@ -19,6 +22,8 @@ Neovim 配置
     3. pip install -r requirements.txt
 3.  vim .config/nvim/init.vim(编辑环境配置） > ln -s ~/.config/nvim/init.vim init.vim
 4.  plugInstall
+5. sudo yum install  xclip (系统剪切板）
+    set clipboard=unnamedplus 
 
 
 
@@ -36,7 +41,7 @@ Neovim 配置
     sh -c 'curl -x socks5h://127.0.0.1:10807 -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 
-### 安装tarbar
+### 安装tagsbar
     wget http://prdownloads.sourceforge.net/ctags/ctags-5.8.tar.gz
     tar -zxvf ctags-5.8.tar.gz
     cd ctags-5.8
