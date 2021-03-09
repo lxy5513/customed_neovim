@@ -52,3 +52,23 @@ Neovim 配置
 或者
     下载ctags，加入PATH 或者 `sudo yum install ctags-5.8-13.el7.x86_64`
 
+
+### 共享服务器的粘贴板
+1. 下载XQuartz,并安装(mac 上）
+2. 配置远程服务器ssh服务 (centos 7)
+    安装 xorg-xauth and xorg-xhost
+    ```
+    sudo yum install -y xorg-x11-xauth
+    sudo yum -y install wqy-zenhei-fonts*
+    sudo yum -y install ibus-libpinyin*
+    sudo yum install -y xorg-x11-xauth xorg-x11-utils xorg-x11-fonts-*
+    ```
+    配置 /etc/ssh/sshd_config:
+    ```
+    AllowTcpForwarding  yes
+    X11UseLocalhost  yes
+    X11DisplayOffset 10
+    X11Forwarding  yes
+    ```
+3. 在客户端可以用-X来连接服务器,或者将 ForwardX11 yes 加入到ssh配置中
+4. 在客户端运行ssh -X test@your_server_ip, 连接后执行xclock,如果看到有一个时钟出来,就说明成功了. 如果没有的话加-vvv进行debug调试看下是哪里出错.
